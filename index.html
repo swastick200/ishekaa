@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Description of Isheka</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fc466b, #3f5efb);
+            color: #ffffff;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #000000, #000000);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: gradientText 3s infinite alternate;
+        }
+
+        @keyframes gradientText {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        .description {
+            font-size: 1.2em;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            position: relative;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        .instagram-link {
+            display: inline-block;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 10px 5px;
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #bc15af, #ff007f);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+
+        .instagram-link:hover {
+            transform: scale(1.15);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+            text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+        }
+
+        .funny-text {
+            background: rgba(255, 255, 0, 0.9);
+            color: #3f0882;
+            border: 3px dashed #ffffff;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px 0;
+            font-size: 1.2em;
+            text-align: left;
+            animation: bounce 2s infinite;
+            max-width: 600px;
+            word-wrap: break-word;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .funny-text::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 150%;
+            height: 150%;
+            background: linear-gradient(315deg, #ff007f, #ff69b4);
+            opacity: 0.5;
+            border-radius: 50%;
+            z-index: -1;
+            animation: rotateBackground 5s linear infinite;
+        }
+
+        @keyframes rotateBackground {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .emoji {
+            font-size: 2em;
+            animation: emojiDance 1.5s infinite;
+        }
+
+        @keyframes emojiDance {
+            0% { transform: rotate(0deg); }
+            25% { transform: rotate(-10deg); }
+            50% { transform: rotate(10deg); }
+            75% { transform: rotate(-10deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+        .glow-button {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px 20px;
+            margin: 20px 10px;
+            background: linear-gradient(45deg, #bc15af, #ff007f);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+
+        .glow-button:hover {
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+            transform: scale(1.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            .description {
+                font-size: 1em;
+                padding: 15px;
+            }
+
+            .instagram-link, .glow-button {
+                padding: 8px 16px;
+                font-size: 1em;
+            }
+
+            .funny-text {
+                font-size: 1em;
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .description {
+                font-size: 0.9em;
+                padding: 10px;
+            }
+
+            .instagram-link, .glow-button {
+                padding: 6px 12px;
+                font-size: 0.9em;
+            }
+
+            .funny-text {
+                font-size: 0.9em;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>The World's Most Petmota Mathamota Buri </h1><div class="emoji">😂</div>
+    <div class="description">
+        <p>A clueless idiot with a big head & glasses on.</p>
+    </div>
+    <a class="instagram-link" href="https://www.instagram.com/chatterjeeisheka/?utm_source=ig_web_button_share_sheet" target="_blank">Isheka's Instagram</a>
+    <a class="instagram-link" href="https://www.instagram.com/s4dx_._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">My Instagram</a>
+    <div class="funny-text">
+        <p>1 :>Trust me, if I ever get the chance to push you in a drain, I'll do it without hesitation!❤️</p>
+        <p>2 :>You’re starting to look like a Katla fish in short Mathamota! 🐟</p>
+        <p>3 :>Darling, M.r Dear wants to say hi from Saturn! Follow me on IG or face my curse of permanent baldness within 3 weeks! 😘</p>
+        <div class="emoji">😂</div>
+    </div>
+</body>
+</html>
